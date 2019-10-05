@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.bg{
+  position:relative;
+  background: #00fdff url(assets/forest-wallpaper-mirrored.jpg);
+  height:100vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animate 15s linear infinite;
+}
+.text{
+  position: absolute;
+  bottom: 0px;
+  font-size: 150px;
+  color: white;
+  left: 400px;
+  font-family: 'Anton', sans-serif;
+}
+
+@keyframes animate {
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: 100% 0;
+  }
+
+}
